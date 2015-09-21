@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface StickCollectionViewFlowLayout : UICollectionViewFlowLayout
-
+@property (nonatomic, assign, getter = isTransformEnabled) BOOL transformEnabled;
 @end

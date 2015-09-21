@@ -8,25 +8,30 @@
 
 #import "StickCollectionViewFlowLayout.h"
 
+static const CGFloat kAttributesTransform = .025f;
+
 @implementation StickCollectionViewFlowLayout
+
+- (void)prepareLayout {
+    _transformEnabled = YES;
+}
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
     NSMutableArray *allItems = [[super layoutAttributesForElementsInRect:rect] mutableCopy];
-    NSMutableDictionary *headers = [NSMutableDictionary dictionary];
-    NSMutableDictionary *firstCells = [NSMutableDictionary dictionary];
+    __block UICollectionViewLayoutAttributes *headerAttributes = nil;
+    __block UICollectionViewLayoutAttributes *firstItemAttributes = nil;
     
     [allItems enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UICollectionViewLayoutAttributes *attributes = obj;
         NSIndexPath *indexPath = attributes.indexPath;
         
         if ([attributes.representedElementKind isEqualToString:UICollectionElementKindSectionHeader]) {
-            headers[@(indexPath.section)] = attributes;
+            headerAttributes = attributes;
         }
         else {
-            UICollectionViewLayoutAttributes *firstItemAttributes = firstCells[@(indexPath.row)];
             if (!firstItemAttributes || indexPath.row > firstItemAttributes.indexPath.row) {
-                firstCells[@(indexPath.row)] = attributes;
-                [self updateFirstCellAttributes:attributes withSectionHeader:headers[@(indexPath.section)]];
+                firstItemAttributes = attributes;
+                [self updateFirstCellAttributes:firstItemAttributes withSectionHeader:headerAttributes];
             }
         }
     }];
@@ -42,8 +47,15 @@
     CGFloat finalPosition = MIN(largerYPosition, maxY);
     
     CGPoint origin = attributes.frame.origin;
+    CGFloat deltaY = (finalPosition - origin.y) / CGRectGetHeight(attributes.frame);
     origin.y = finalPosition;
+    
+    if (self.isTransformEnabled) {
+        attributes.transform = CGAffineTransformMakeScale((1- deltaY * kAttributesTransform), (1 - deltaY * kAttributesTransform));
+    }
+    
     attributes.frame = (CGRect){origin, attributes.frame.size};
+    attributes.zIndex = attributes.indexPath.row;
 }
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
