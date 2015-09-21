@@ -29,15 +29,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37K-EU-TsW" userLabel="City">
-                                                    <rect key="frame" x="221" y="14" width="43" height="22"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                                    <rect key="frame" x="218" y="12" width="49" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.52549019610000003" green="0.85490196080000003" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="37K-EU-TsW" secondAttribute="centerX" id="Xbd-CP-bfK"/>
                                             <constraint firstAttribute="centerY" secondItem="37K-EU-TsW" secondAttribute="centerY" id="wMF-Ku-rMQ"/>

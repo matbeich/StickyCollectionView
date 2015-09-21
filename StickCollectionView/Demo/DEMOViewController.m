@@ -16,6 +16,8 @@
 
 static NSString *const kDemoCell = @"demoCell";
 static const float kCellHeight = 50.f;
+static const float kMinimumItemSpace = 5.f;
+
 @implementation DEMOViewController
 
 - (void)viewDidLoad {
@@ -38,9 +40,12 @@ static const float kCellHeight = 50.f;
     return cell;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(CGRectGetWidth(self.view.bounds), kCellHeight);
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionView *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    return kMinimumItemSpace;
 }
 
 @end
