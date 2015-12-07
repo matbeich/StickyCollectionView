@@ -38,7 +38,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wco-l9-YR3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="599" height="60"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="599" height="50"/>
                                                     <animations/>
                                                     <color key="backgroundColor" red="0.0" green="0.57647058819999997" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
@@ -59,7 +59,7 @@
                                             <constraint firstItem="wco-l9-YR3" firstAttribute="leading" secondItem="rBm-jD-eHm" secondAttribute="leading" id="LTQ-8R-WOu"/>
                                             <constraint firstItem="wco-l9-YR3" firstAttribute="top" secondItem="rBm-jD-eHm" secondAttribute="top" id="Tv9-nW-h4g"/>
                                             <constraint firstAttribute="centerX" secondItem="37K-EU-TsW" secondAttribute="centerX" id="Xbd-CP-bfK"/>
-                                            <constraint firstAttribute="bottom" secondItem="wco-l9-YR3" secondAttribute="bottom" constant="-10" id="dIp-SJ-LMd"/>
+                                            <constraint firstAttribute="bottom" secondItem="wco-l9-YR3" secondAttribute="bottom" id="dIp-SJ-LMd"/>
                                             <constraint firstAttribute="trailing" secondItem="wco-l9-YR3" secondAttribute="trailing" id="lOG-ZV-RXN"/>
                                             <constraint firstAttribute="centerY" secondItem="37K-EU-TsW" secondAttribute="centerY" id="wMF-Ku-rMQ"/>
                                         </constraints>

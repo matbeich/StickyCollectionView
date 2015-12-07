@@ -21,44 +21,40 @@ static const CGFloat kAttributesTransform = .025f;
     NSMutableArray *allItems = [[NSMutableArray alloc]initWithArray:oldItems copyItems:YES];
     
     __block UICollectionViewLayoutAttributes *headerAttributes = nil;
-    __block UICollectionViewLayoutAttributes *firstItemAttributes = nil;
     
     [allItems enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UICollectionViewLayoutAttributes *attributes = obj;
-        NSIndexPath *indexPath = attributes.indexPath;
         
         if ([attributes.representedElementKind isEqualToString:UICollectionElementKindSectionHeader]) {
             headerAttributes = attributes;
         }
         else {
-            if (!firstItemAttributes || indexPath.row > firstItemAttributes.indexPath.row) {
-                firstItemAttributes = attributes;
-                [self updateFirstCellAttributes:firstItemAttributes withSectionHeader:headerAttributes];
-            }
+            [self updateCellAttributes:attributes withSectionHeader:headerAttributes];
+            
         }
     }];
     
     return allItems;
 }
 
-- (void)updateFirstCellAttributes:(UICollectionViewLayoutAttributes *)attributes withSectionHeader:(UICollectionViewLayoutAttributes *)headerAttributes {
+- (void)updateCellAttributes:(UICollectionViewLayoutAttributes *)attributes withSectionHeader:(UICollectionViewLayoutAttributes *)headerAttributes {
     
-    CGFloat maxY = CGRectGetMaxY(attributes.frame) - CGRectGetHeight(headerAttributes.bounds);
     CGFloat minY = CGRectGetMinY(self.collectionView.bounds) + self.collectionView.contentInset.top;
-    CGFloat largerYPosition = MAX(minY, attributes.frame.origin.y);
-    CGFloat finalPosition = MIN(largerYPosition, maxY);
+    CGFloat maxY = attributes.frame.origin.y - CGRectGetHeight(headerAttributes.bounds);
+    CGFloat finalY = MAX(minY, maxY);
     
     CGPoint origin = attributes.frame.origin;
     
-    CGFloat deltaY = (finalPosition - origin.y) / CGRectGetHeight(attributes.frame);
-    origin.y = finalPosition;
+    CGFloat deltaY = (finalY - origin.y) / CGRectGetHeight(attributes.frame);
     
     if (self.isTransformEnabled) {
         attributes.transform = CGAffineTransformMakeScale((1- deltaY * kAttributesTransform), (1 - deltaY * kAttributesTransform));
     }
-    
+
+    origin.y = finalY;
     attributes.frame = (CGRect){origin, attributes.frame.size};
     attributes.zIndex = attributes.indexPath.row;
+
 }
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds

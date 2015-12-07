@@ -15,8 +15,8 @@
 @end
 
 static NSString *const kDemoCell = @"demoCell";
-static const float kCellHeight = 100.f;
-static const float kItemSpace = -10.f;
+static const float kCellHeight = 120.f;
+static const float kItemSpace = -20.f;
 
 @implementation DEMOViewController
 
