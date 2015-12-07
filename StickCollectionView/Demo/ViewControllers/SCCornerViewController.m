@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Bogdan Matveev. All rights reserved.
 //
 
-#import "DEMOViewController.h"
-#import "DemoCollectionViewCell.h"
+#import "SCCornerViewController.h"
+#import "SCCornerCollectionViewCell.h"
 
-@interface DEMOViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface SCCornerViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSArray *citiesArray;
 @end
@@ -18,7 +18,7 @@ static NSString *const kDemoCell = @"demoCell";
 static const float kCellHeight = 120.f;
 static const float kItemSpace = -20.f;
 
-@implementation DEMOViewController
+@implementation SCCornerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,7 +35,7 @@ static const float kItemSpace = -20.f;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    DemoCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kDemoCell forIndexPath:indexPath];
+    SCCornerCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kDemoCell forIndexPath:indexPath];
     cell.city = self.citiesArray[indexPath.row];
     return cell;
 }

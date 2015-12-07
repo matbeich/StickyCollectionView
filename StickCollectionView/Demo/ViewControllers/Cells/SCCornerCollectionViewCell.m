@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Bogdan Matveev. All rights reserved.
 //
 
-#import "DemoCollectionViewCell.h"
+#import "SCCornerCollectionViewCell.h"
 
-@interface DemoCollectionViewCell ()
+@interface SCCornerCollectionViewCell ()
 @property (weak, nonatomic) IBOutlet UILabel *cityLabel;
 @property (weak, nonatomic) IBOutlet UIView *backingView;
 @end

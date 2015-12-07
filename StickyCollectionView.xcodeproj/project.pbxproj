@@ -12,9 +12,9 @@
 		B2E5D43D1BB00D510003E76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E5D43B1BB00D510003E76E /* Main.storyboard */; };
 		B2E5D43F1BB00D510003E76E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E5D43E1BB00D510003E76E /* Images.xcassets */; };
 		B2E5D4421BB00D510003E76E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E5D4401BB00D510003E76E /* LaunchScreen.xib */; };
-		B2E5D45F1BB00E5F0003E76E /* DEMOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D45E1BB00E5F0003E76E /* DEMOViewController.m */; };
+		B2E5D45F1BB00E5F0003E76E /* SCCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D45E1BB00E5F0003E76E /* SCCornerViewController.m */; };
 		B2E5D4621BB00F1F0003E76E /* StickCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D4611BB00F1F0003E76E /* StickCollectionViewFlowLayout.m */; };
-		B2E5D4661BB027C10003E76E /* DemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D4651BB027C10003E76E /* DemoCollectionViewCell.m */; };
+		B2E5D4661BB027C10003E76E /* SCCornerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D4651BB027C10003E76E /* SCCornerCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +26,12 @@
 		B2E5D43C1BB00D510003E76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2E5D43E1BB00D510003E76E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2E5D4411BB00D510003E76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B2E5D45D1BB00E5F0003E76E /* DEMOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOViewController.h; sourceTree = "<group>"; };
-		B2E5D45E1BB00E5F0003E76E /* DEMOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOViewController.m; sourceTree = "<group>"; };
+		B2E5D45D1BB00E5F0003E76E /* SCCornerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCornerViewController.h; sourceTree = "<group>"; };
+		B2E5D45E1BB00E5F0003E76E /* SCCornerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCornerViewController.m; sourceTree = "<group>"; };
 		B2E5D4601BB00F1F0003E76E /* StickCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		B2E5D4611BB00F1F0003E76E /* StickCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickCollectionViewFlowLayout.m; sourceTree = "<group>"; };
-		B2E5D4641BB027C10003E76E /* DemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCollectionViewCell.h; sourceTree = "<group>"; };
-		B2E5D4651BB027C10003E76E /* DemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCollectionViewCell.m; sourceTree = "<group>"; };
+		B2E5D4641BB027C10003E76E /* SCCornerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCornerCollectionViewCell.h; sourceTree = "<group>"; };
+		B2E5D4651BB027C10003E76E /* SCCornerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCornerCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2AC521B1C16125D0076AC63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2AC521C1C1612800076AC63 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2AC521D1C1613080076AC63 /* Cells */,
+				B2E5D45D1BB00E5F0003E76E /* SCCornerViewController.h */,
+				B2E5D45E1BB00E5F0003E76E /* SCCornerViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2AC521D1C1613080076AC63 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B2E5D4641BB027C10003E76E /* SCCornerCollectionViewCell.h */,
+				B2E5D4651BB027C10003E76E /* SCCornerCollectionViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B2E5D4251BB00D510003E76E = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +132,8 @@
 		B2E5D4591BB00DD10003E76E /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B2E5D45D1BB00E5F0003E76E /* DEMOViewController.h */,
-				B2E5D45E1BB00E5F0003E76E /* DEMOViewController.m */,
-				B2E5D4641BB027C10003E76E /* DemoCollectionViewCell.h */,
-				B2E5D4651BB027C10003E76E /* DemoCollectionViewCell.m */,
+				B2AC521C1C1612800076AC63 /* ViewControllers */,
+				B2AC521B1C16125D0076AC63 /* Views */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -187,8 +211,8 @@
 				B2E5D4371BB00D510003E76E /* AppDelegate.m in Sources */,
 				B2E5D4341BB00D510003E76E /* main.m in Sources */,
 				B2E5D4621BB00F1F0003E76E /* StickCollectionViewFlowLayout.m in Sources */,
-				B2E5D4661BB027C10003E76E /* DemoCollectionViewCell.m in Sources */,
-				B2E5D45F1BB00E5F0003E76E /* DEMOViewController.m in Sources */,
+				B2E5D4661BB027C10003E76E /* SCCornerCollectionViewCell.m in Sources */,
+				B2E5D45F1BB00E5F0003E76E /* SCCornerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

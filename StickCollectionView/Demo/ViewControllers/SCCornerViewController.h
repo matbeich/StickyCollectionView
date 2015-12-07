@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DEMOViewController : UIViewController
+@interface SCCornerViewController : UIViewController
 
 @end

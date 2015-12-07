@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DemoCollectionViewCell : UICollectionViewCell
+@interface SCCornerCollectionViewCell : UICollectionViewCell
 @property (nonatomic, strong) NSString *city;
 @end
