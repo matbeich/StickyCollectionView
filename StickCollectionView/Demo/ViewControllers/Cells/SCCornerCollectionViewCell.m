@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *backingView;
 @end
 
-@implementation DemoCollectionViewCell
+@implementation SCCornerCollectionViewCell
 
 - (void)awakeFromNib {
     self.backingView.layer.cornerRadius = 12.f;
@@ -22,7 +22,7 @@
 
 - (void)setCity:(NSString *)city {
     self.cityLabel.text = city;
-     self.backingView.backgroundColor = [UIColor colorWithHue:drand48() saturation:1.0 brightness:1.0 alpha:1.0];
+     self.backingView.backgroundColor = [UIColor colorWithHue:drand48() saturation:1.f brightness:.8f alpha:1.f];
 }
 
 @end

@@ -49,4 +49,8 @@ static const float kItemSpace = -20.f;
     return kItemSpace;
 }
 
+#pragma mark -=Actions=-
+- (IBAction)actionClose:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
