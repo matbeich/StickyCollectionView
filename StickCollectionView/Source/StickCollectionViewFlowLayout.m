@@ -13,11 +13,13 @@ static const CGFloat kAttributesTransform = .025f;
 @implementation StickCollectionViewFlowLayout
 
 - (void)prepareLayout {
-    _transformEnabled = YES;
+    _transformEnabled = NO;
 }
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
-    NSMutableArray *allItems = [[super layoutAttributesForElementsInRect:rect] mutableCopy];
+    NSArray *oldItems = [super layoutAttributesForElementsInRect:rect];
+    NSMutableArray *allItems = [[NSMutableArray alloc]initWithArray:oldItems copyItems:YES];
+    
     __block UICollectionViewLayoutAttributes *headerAttributes = nil;
     __block UICollectionViewLayoutAttributes *firstItemAttributes = nil;
     
@@ -47,6 +49,7 @@ static const CGFloat kAttributesTransform = .025f;
     CGFloat finalPosition = MIN(largerYPosition, maxY);
     
     CGPoint origin = attributes.frame.origin;
+    
     CGFloat deltaY = (finalPosition - origin.y) / CGRectGetHeight(attributes.frame);
     origin.y = finalPosition;
     

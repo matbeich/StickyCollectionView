@@ -15,8 +15,8 @@
 @end
 
 static NSString *const kDemoCell = @"demoCell";
-static const float kCellHeight = 50.f;
-static const float kMinimumItemSpace = 5.f;
+static const float kCellHeight = 100.f;
+static const float kItemSpace = -10.f;
 
 @implementation DEMOViewController
 
@@ -25,7 +25,7 @@ static const float kMinimumItemSpace = 5.f;
     self.citiesArray = @[@"Moscow", @"London", @"New York", @"Paris", @"Madrid", @"Rio", @"Tokyo", @"St.Petersburg", @"Barcelona", @"Kiev", @"Praga", @"Istambul"];
 }
 
-#pragma mark -=CollectionView=-
+#pragma mark -=CollectionView datasource=-
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
@@ -40,12 +40,13 @@ static const float kMinimumItemSpace = 5.f;
     return cell;
 }
 
+#pragma mark -=CollectionView layout=-
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(CGRectGetWidth(self.view.bounds), kCellHeight);
 }
 
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionView *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return kMinimumItemSpace;
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    return kItemSpace;
 }
 
 @end

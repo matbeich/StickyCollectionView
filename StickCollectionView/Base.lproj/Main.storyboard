@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,34 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UXd-a8-Dyo">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cby-er-yWi">
+                                <rect key="frame" x="16" y="24" width="568" height="23"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <color key="textColor" red="0.81960784310000001" green="0.81568627449999997" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UXd-a8-Dyo">
+                                <rect key="frame" x="0.0" y="63" width="600" height="537"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewLayout key="collectionViewLayout" id="edz-Jj-B9C" customClass="StickCollectionViewFlowLayout"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="demoCell" id="rBm-jD-eHm" customClass="DemoCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="1" y="0.0" width="599" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="485" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="599" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37K-EU-TsW" userLabel="City">
-                                                    <rect key="frame" x="218" y="12" width="49" height="26"/>
+                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wco-l9-YR3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="599" height="60"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" red="0.0" green="0.57647058819999997" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CityLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37K-EU-TsW" userLabel="City">
+                                                    <rect key="frame" x="257" y="12" width="86" height="26"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="0.52549019610000003" green="0.85490196080000003" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="wco-l9-YR3" firstAttribute="leading" secondItem="rBm-jD-eHm" secondAttribute="leading" id="LTQ-8R-WOu"/>
+                                            <constraint firstItem="wco-l9-YR3" firstAttribute="top" secondItem="rBm-jD-eHm" secondAttribute="top" id="Tv9-nW-h4g"/>
                                             <constraint firstAttribute="centerX" secondItem="37K-EU-TsW" secondAttribute="centerX" id="Xbd-CP-bfK"/>
+                                            <constraint firstAttribute="bottom" secondItem="wco-l9-YR3" secondAttribute="bottom" constant="-10" id="dIp-SJ-LMd"/>
+                                            <constraint firstAttribute="trailing" secondItem="wco-l9-YR3" secondAttribute="trailing" id="lOG-ZV-RXN"/>
                                             <constraint firstAttribute="centerY" secondItem="37K-EU-TsW" secondAttribute="centerY" id="wMF-Ku-rMQ"/>
                                         </constraints>
-                                        <size key="customSize" width="485" height="50"/>
+                                        <size key="customSize" width="599" height="50"/>
                                         <connections>
+                                            <outlet property="backingView" destination="wco-l9-YR3" id="8zk-qk-2Be"/>
                                             <outlet property="cityLabel" destination="37K-EU-TsW" id="Gfq-eD-cYj"/>
                                         </connections>
                                     </collectionViewCell>
@@ -54,13 +76,23 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UXd-a8-Dyo" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="efj-zH-Pam"/>
+                            <constraint firstItem="Cby-er-yWi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="MXa-yH-gpu"/>
+                            <constraint firstItem="UXd-a8-Dyo" firstAttribute="top" secondItem="Cby-er-yWi" secondAttribute="bottom" constant="16" id="OYD-VK-9TI"/>
+                            <constraint firstItem="Cby-er-yWi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="4" id="XXc-Cy-QuR"/>
+                            <constraint firstItem="UXd-a8-Dyo" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="80" id="efj-zH-Pam"/>
+                            <constraint firstAttribute="trailing" secondItem="Cby-er-yWi" secondAttribute="trailing" constant="16" id="jPs-Vz-3XI"/>
                             <constraint firstAttribute="trailing" secondItem="UXd-a8-Dyo" secondAttribute="trailing" id="m6l-3S-a9B"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UXd-a8-Dyo" secondAttribute="bottom" id="peG-5B-Lff"/>
                             <constraint firstItem="UXd-a8-Dyo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="zHG-MP-L8J"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="efj-zH-Pam"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="UXd-a8-Dyo" id="KaI-LQ-KZ6"/>
@@ -68,6 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="225" y="386"/>
         </scene>
     </scenes>
 </document>
