@@ -24,8 +24,8 @@ static const float kItemSpace = -20.f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.citiesArray = @[@"Moscow", @"London", @"New York", @"Paris", @"Madrid", @"Rio", @"Tokyo", @"St.Petersburg", @"Barcelona", @"Kiev", @"Praga", @"Istambul"];
-    self.colorsArray = @[@"EE5464", @"DC4352", @"FD6D50", @"EA583F", @"F6BC43", @"8DC253", @"4FC2E9", @"3CAFDB", @"5D9CEE", @"4B89DD", @"AD93EE", @"977BDD"];
+    self.citiesArray = @[@"Bangkok", @"Barcelona", @"Beijing", @"Istanbul", @"Kiev", @"Kyoto", @"London", @"Madrid", @"Moscow", @"New York", @"Paris", @"Prague", @"Rio", @"Rome", @"St.Petersburg", @"Tokyo", @"Venice", @"Vienna"];
+    self.colorsArray = @[@"EE5464", @"DC4352", @"FD6D50", @"EA583F", @"F6BC43", @"8DC253", @"4FC2E9", @"3CAFDB", @"5D9CEE", @"4B89DD", @"AD93EE", @"977BDD", @"EE87C0", @"D971AE", @"903FB1", @"9D56B9", @"227FBD", @"2E97DE"];
 }
 
 #pragma mark -=CollectionView datasource=-
