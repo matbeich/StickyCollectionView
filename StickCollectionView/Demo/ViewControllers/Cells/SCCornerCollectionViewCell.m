@@ -22,7 +22,10 @@
 
 - (void)setCity:(NSString *)city {
     self.cityLabel.text = city;
-     self.backingView.backgroundColor = [UIColor colorWithHue:drand48() saturation:1.f brightness:.8f alpha:1.f];
+}
+
+- (void)setColor:(UIColor *)color {
+    self.backingView.backgroundColor = color;
 }
 
 @end

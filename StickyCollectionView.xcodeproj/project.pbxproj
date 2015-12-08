@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25B6D691C16143F00B3CCF7 /* SCCustomizableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B6D681C16143F00B3CCF7 /* SCCustomizableButton.m */; };
+		B25B6D6C1C16150000B3CCF7 /* SCWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B6D6B1C16150000B3CCF7 /* SCWelcomeViewController.m */; };
+		B25B6D731C176B4100B3CCF7 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B6D721C176B4100B3CCF7 /* UIColor+Hex.m */; };
 		B2E5D4341BB00D510003E76E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D4331BB00D510003E76E /* main.m */; };
 		B2E5D4371BB00D510003E76E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D4361BB00D510003E76E /* AppDelegate.m */; };
 		B2E5D43D1BB00D510003E76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E5D43B1BB00D510003E76E /* Main.storyboard */; };
@@ -18,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B25B6D671C16143F00B3CCF7 /* SCCustomizableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCustomizableButton.h; sourceTree = "<group>"; };
+		B25B6D681C16143F00B3CCF7 /* SCCustomizableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCustomizableButton.m; sourceTree = "<group>"; };
+		B25B6D6A1C16150000B3CCF7 /* SCWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWelcomeViewController.h; sourceTree = "<group>"; };
+		B25B6D6B1C16150000B3CCF7 /* SCWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWelcomeViewController.m; sourceTree = "<group>"; };
+		B25B6D711C176B4100B3CCF7 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		B25B6D721C176B4100B3CCF7 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		B2E5D42E1BB00D510003E76E /* StickyCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickyCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E5D4321BB00D510003E76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2E5D4331BB00D510003E76E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,9 +54,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B25B6D6D1C176AE300B3CCF7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B25B6D711C176B4100B3CCF7 /* UIColor+Hex.h */,
+				B25B6D721C176B4100B3CCF7 /* UIColor+Hex.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B2AC521B1C16125D0076AC63 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B25B6D671C16143F00B3CCF7 /* SCCustomizableButton.h */,
+				B25B6D681C16143F00B3CCF7 /* SCCustomizableButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -58,6 +78,8 @@
 				B2AC521D1C1613080076AC63 /* Cells */,
 				B2E5D45D1BB00E5F0003E76E /* SCCornerViewController.h */,
 				B2E5D45E1BB00E5F0003E76E /* SCCornerViewController.m */,
+				B25B6D6A1C16150000B3CCF7 /* SCWelcomeViewController.h */,
+				B25B6D6B1C16150000B3CCF7 /* SCWelcomeViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -132,6 +154,7 @@
 		B2E5D4591BB00DD10003E76E /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				B25B6D6D1C176AE300B3CCF7 /* Helpers */,
 				B2AC521C1C1612800076AC63 /* ViewControllers */,
 				B2AC521B1C16125D0076AC63 /* Views */,
 			);
@@ -212,7 +235,10 @@
 				B2E5D4341BB00D510003E76E /* main.m in Sources */,
 				B2E5D4621BB00F1F0003E76E /* StickCollectionViewFlowLayout.m in Sources */,
 				B2E5D4661BB027C10003E76E /* SCCornerCollectionViewCell.m in Sources */,
+				B25B6D691C16143F00B3CCF7 /* SCCustomizableButton.m in Sources */,
+				B25B6D731C176B4100B3CCF7 /* UIColor+Hex.m in Sources */,
 				B2E5D45F1BB00E5F0003E76E /* SCCornerViewController.m in Sources */,
+				B25B6D6C1C16150000B3CCF7 /* SCWelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

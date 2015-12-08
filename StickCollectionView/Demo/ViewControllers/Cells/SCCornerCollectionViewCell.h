@@ -10,4 +10,5 @@
 
 @interface SCCornerCollectionViewCell : UICollectionViewCell
 @property (nonatomic, strong) NSString *city;
+@property (nonatomic, strong) UIColor *color;
 @end

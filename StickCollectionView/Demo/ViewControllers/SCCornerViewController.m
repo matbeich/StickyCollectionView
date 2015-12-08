@@ -8,10 +8,12 @@
 
 #import "SCCornerViewController.h"
 #import "SCCornerCollectionViewCell.h"
+#import "UIColor+Hex.h"
 
 @interface SCCornerViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSArray *citiesArray;
+@property (strong, nonatomic) NSArray *colorsArray;
 @end
 
 static NSString *const kDemoCell = @"demoCell";
@@ -23,6 +25,7 @@ static const float kItemSpace = -20.f;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.citiesArray = @[@"Moscow", @"London", @"New York", @"Paris", @"Madrid", @"Rio", @"Tokyo", @"St.Petersburg", @"Barcelona", @"Kiev", @"Praga", @"Istambul"];
+    self.colorsArray = @[@"EE5464", @"DC4352", @"FD6D50", @"EA583F", @"F6BC43", @"8DC253", @"4FC2E9", @"3CAFDB", @"5D9CEE", @"4B89DD", @"AD93EE", @"977BDD"];
 }
 
 #pragma mark -=CollectionView datasource=-
@@ -36,6 +39,10 @@ static const float kItemSpace = -20.f;
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SCCornerCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kDemoCell forIndexPath:indexPath];
+    NSString *hexString =self.colorsArray[indexPath.row];
+    UIColor *color = [UIColor colorFromHexString:hexString];
+    
+    cell.color = color;
     cell.city = self.citiesArray[indexPath.row];
     return cell;
 }
