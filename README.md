@@ -1,3 +1,4 @@
+## StickyCollectionView
 Collection view layout for presenting overlapping cells like in Corner App.
 
 ## Overview
