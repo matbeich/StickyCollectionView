@@ -1,5 +1,5 @@
 ## StickyCollectionView
-Collection view layout for presenting overlapping cells.
+UICollectionView layout for presenting of the overlapping cells.
 
 [Checkout demo](https://appetize.io/app/vrpfb0huzcr02h3g5wwh183jcw?device=iphone5s&scale=75&orientation=portrait&osVersion=9.2)
 ## Overview
@@ -11,7 +11,7 @@ Collection view layout for presenting overlapping cells.
 Drag the files from the Source folder into your project.
 
 ### Usage
-Just use StickCollectionViewFlowLayout as the layout of your collection view.
+Just use StickCollectionViewFlowLayout as a layout of your collection view.
 
 ## Requirements
 - Objective c
