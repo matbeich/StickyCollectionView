@@ -8,13 +8,7 @@
 
 #import "StickCollectionViewFlowLayout.h"
 
-static const CGFloat kAttributesTransform = .025f;
-
 @implementation StickCollectionViewFlowLayout
-
-- (void)prepareLayout {
-    _transformEnabled = NO;
-}
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
     NSArray *oldItems = [super layoutAttributesForElementsInRect:rect];
@@ -47,8 +41,8 @@ static const CGFloat kAttributesTransform = .025f;
     
     CGFloat deltaY = (finalY - origin.y) / CGRectGetHeight(attributes.frame);
     
-    if (self.isTransformEnabled) {
-        attributes.transform = CGAffineTransformMakeScale((1- deltaY * kAttributesTransform), (1 - deltaY * kAttributesTransform));
+    if (self.itemTransform) {
+        attributes.transform = CGAffineTransformMakeScale((1- deltaY * self.itemTransform), (1 - deltaY * self.itemTransform));
     }
 
     origin.y = finalY;
