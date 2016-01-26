@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B245D4AD1C5810E4008CC42B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B245D4AC1C5810E4008CC42B /* Images.xcassets */; };
 		B25B6D691C16143F00B3CCF7 /* SCCustomizableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B6D681C16143F00B3CCF7 /* SCCustomizableButton.m */; };
 		B25B6D6C1C16150000B3CCF7 /* SCWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B6D6B1C16150000B3CCF7 /* SCWelcomeViewController.m */; };
 		B25B6D731C176B4100B3CCF7 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B6D721C176B4100B3CCF7 /* UIColor+Hex.m */; };
+		B25F96161C5809B50066E89E /* SCPrimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F96151C5809B50066E89E /* SCPrimerViewController.m */; };
+		B25F96191C5809BE0066E89E /* SCPrimerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F96181C5809BE0066E89E /* SCPrimerCollectionViewCell.m */; };
 		B2E5D4341BB00D510003E76E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D4331BB00D510003E76E /* main.m */; };
 		B2E5D4371BB00D510003E76E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D4361BB00D510003E76E /* AppDelegate.m */; };
 		B2E5D43D1BB00D510003E76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E5D43B1BB00D510003E76E /* Main.storyboard */; };
-		B2E5D43F1BB00D510003E76E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E5D43E1BB00D510003E76E /* Images.xcassets */; };
 		B2E5D4421BB00D510003E76E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E5D4401BB00D510003E76E /* LaunchScreen.xib */; };
 		B2E5D45F1BB00E5F0003E76E /* SCCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D45E1BB00E5F0003E76E /* SCCornerViewController.m */; };
 		B2E5D4621BB00F1F0003E76E /* StickCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E5D4611BB00F1F0003E76E /* StickCollectionViewFlowLayout.m */; };
@@ -21,19 +23,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B245D4AC1C5810E4008CC42B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B25B6D671C16143F00B3CCF7 /* SCCustomizableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCustomizableButton.h; sourceTree = "<group>"; };
 		B25B6D681C16143F00B3CCF7 /* SCCustomizableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCustomizableButton.m; sourceTree = "<group>"; };
 		B25B6D6A1C16150000B3CCF7 /* SCWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWelcomeViewController.h; sourceTree = "<group>"; };
 		B25B6D6B1C16150000B3CCF7 /* SCWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWelcomeViewController.m; sourceTree = "<group>"; };
 		B25B6D711C176B4100B3CCF7 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		B25B6D721C176B4100B3CCF7 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		B25F96141C5809B50066E89E /* SCPrimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPrimerViewController.h; sourceTree = "<group>"; };
+		B25F96151C5809B50066E89E /* SCPrimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPrimerViewController.m; sourceTree = "<group>"; };
+		B25F96171C5809BE0066E89E /* SCPrimerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPrimerCollectionViewCell.h; sourceTree = "<group>"; };
+		B25F96181C5809BE0066E89E /* SCPrimerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPrimerCollectionViewCell.m; sourceTree = "<group>"; };
 		B2E5D42E1BB00D510003E76E /* StickyCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickyCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E5D4321BB00D510003E76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2E5D4331BB00D510003E76E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2E5D4351BB00D510003E76E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = StickCollectionView/App/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		B2E5D4361BB00D510003E76E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = StickCollectionView/App/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		B2E5D43C1BB00D510003E76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B2E5D43E1BB00D510003E76E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2E5D4411BB00D510003E76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B2E5D45D1BB00E5F0003E76E /* SCCornerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCornerViewController.h; sourceTree = "<group>"; };
 		B2E5D45E1BB00E5F0003E76E /* SCCornerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCornerViewController.m; sourceTree = "<group>"; };
@@ -78,6 +84,8 @@
 				B2AC521D1C1613080076AC63 /* Cells */,
 				B2E5D45D1BB00E5F0003E76E /* SCCornerViewController.h */,
 				B2E5D45E1BB00E5F0003E76E /* SCCornerViewController.m */,
+				B25F96141C5809B50066E89E /* SCPrimerViewController.h */,
+				B25F96151C5809B50066E89E /* SCPrimerViewController.m */,
 				B25B6D6A1C16150000B3CCF7 /* SCWelcomeViewController.h */,
 				B25B6D6B1C16150000B3CCF7 /* SCWelcomeViewController.m */,
 			);
@@ -89,6 +97,8 @@
 			children = (
 				B2E5D4641BB027C10003E76E /* SCCornerCollectionViewCell.h */,
 				B2E5D4651BB027C10003E76E /* SCCornerCollectionViewCell.m */,
+				B25F96171C5809BE0066E89E /* SCPrimerCollectionViewCell.h */,
+				B25F96181C5809BE0066E89E /* SCPrimerCollectionViewCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -124,8 +134,8 @@
 		B2E5D4311BB00D510003E76E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B245D4AC1C5810E4008CC42B /* Images.xcassets */,
 				B2E5D43B1BB00D510003E76E /* Main.storyboard */,
-				B2E5D43E1BB00D510003E76E /* Images.xcassets */,
 				B2E5D4401BB00D510003E76E /* LaunchScreen.xib */,
 				B2E5D4321BB00D510003E76E /* Info.plist */,
 				B2E5D4331BB00D510003E76E /* main.m */,
@@ -218,9 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B245D4AD1C5810E4008CC42B /* Images.xcassets in Resources */,
 				B2E5D43D1BB00D510003E76E /* Main.storyboard in Resources */,
 				B2E5D4421BB00D510003E76E /* LaunchScreen.xib in Resources */,
-				B2E5D43F1BB00D510003E76E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +246,8 @@
 				B2E5D4621BB00F1F0003E76E /* StickCollectionViewFlowLayout.m in Sources */,
 				B2E5D4661BB027C10003E76E /* SCCornerCollectionViewCell.m in Sources */,
 				B25B6D691C16143F00B3CCF7 /* SCCustomizableButton.m in Sources */,
+				B25F96191C5809BE0066E89E /* SCPrimerCollectionViewCell.m in Sources */,
+				B25F96161C5809B50066E89E /* SCPrimerViewController.m in Sources */,
 				B25B6D731C176B4100B3CCF7 /* UIColor+Hex.m in Sources */,
 				B2E5D45F1BB00E5F0003E76E /* SCCornerViewController.m in Sources */,
 				B25B6D6C1C16150000B3CCF7 /* SCWelcomeViewController.m in Sources */,

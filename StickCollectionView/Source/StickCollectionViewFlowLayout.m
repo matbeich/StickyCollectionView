@@ -41,8 +41,8 @@
     
     CGFloat deltaY = (finalY - origin.y) / CGRectGetHeight(attributes.frame);
     
-    if (self.itemTransform) {
-        attributes.transform = CGAffineTransformMakeScale((1- deltaY * self.itemTransform), (1 - deltaY * self.itemTransform));
+    if (self.firstItemTransform) {
+        attributes.transform = CGAffineTransformMakeScale((1- deltaY * self.firstItemTransform), (1 - deltaY * self.firstItemTransform));
     }
 
     origin.y = finalY;
