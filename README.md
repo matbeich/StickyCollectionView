@@ -3,8 +3,8 @@ UICollectionView layout for presenting of the overlapping cells.
 
 [Checkout demo](https://appetize.io/app/vrpfb0huzcr02h3g5wwh183jcw?device=iphone5s&scale=75&orientation=portrait&osVersion=9.2)
 ## Overview
-![Instructions demo](https://cloud.githubusercontent.com/assets/5644547/11768922/90c8ddb2-a1ec-11e5-9476-bff461e214c2.gif)
-
+![Corner Collection View](https://cloud.githubusercontent.com/assets/5644547/11768922/90c8ddb2-a1ec-11e5-9476-bff461e214c2.gif)
+![Primer Collection View](https://cloud.githubusercontent.com/assets/5644547/12595806/6f3bcfdc-c48e-11e5-91e0-1c4b724bf154.gif)
 ## Installation
 
 ### Manually
