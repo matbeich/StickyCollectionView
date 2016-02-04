@@ -1,6 +1,8 @@
 ## StickyCollectionView
-UICollectionView layout for presenting of the overlapping cells.
+UICollectionView layout for presenting of the overlapping cells. 
+
 [Swift version](https://github.com/matbeich/StickyCollectionView-Swift)
+
 [Checkout demo](https://appetize.io/app/63y1wgk56p6c4h9zr5n6efy9wm?device=iphone5s&scale=75&orientation=portrait&osVersion=9.2)
 ## Overview
 ![Corner Collection View](https://cloud.githubusercontent.com/assets/5644547/11768922/90c8ddb2-a1ec-11e5-9476-bff461e214c2.gif)
